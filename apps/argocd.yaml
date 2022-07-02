@@ -10,3 +10,6 @@ spec:
   source:
     path: bootstrap
     repoURL: https://github.com/thecooldrop/argo-test-bootstrap.git
+    kustomize:
+      commonLabels:
+        app.kubernetes.io/instance: argo-cd
