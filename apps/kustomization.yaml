@@ -1,3 +1,4 @@
 resources:
 - argocd.yaml
 - argo-rollouts.yaml
+namespace: argocd
