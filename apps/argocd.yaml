@@ -9,4 +9,4 @@ spec:
   project: default
   source:
     path: bootstrap
-    repoURL: https://github.com/thecooldrop/argolearn.git
+    repoURL: https://github.com/thecooldrop/argo-test-bootstrap.git
