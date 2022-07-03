@@ -1,6 +1,6 @@
 kind delete cluster && \
 kind create cluster && \
-kubectl apply -k bootstrap/argocd
+kubectl apply -k kustomizations/argocd
 kubectl wait --for condition=established --timeout=60s crd/applications.argoproj.io -n argocd
 kubectl apply -k bootstrap
 while true; do
