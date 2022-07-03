@@ -2,3 +2,4 @@ resources:
   - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 transformers:
   - argocd-labels.yaml
+namespace: argocd
