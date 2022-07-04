@@ -1,4 +1,6 @@
 resources:
 - argocd.yaml
 - argo-rollouts.yaml
+- cluster-resources.yaml
+- argo-workflows.yaml
 namespace: argocd
