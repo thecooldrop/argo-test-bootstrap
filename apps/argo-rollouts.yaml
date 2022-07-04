@@ -10,3 +10,6 @@ spec:
   source:
     path: charts/argo-rollouts
     repoURL: https://github.com/argoproj/argo-helm
+  syncPolicy:
+    automated:
+      selfHeal: true

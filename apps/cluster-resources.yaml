@@ -10,3 +10,6 @@ spec:
   source:
     path: kustomizations/cluster-resources
     repoURL: https://github.com/thecooldrop/argo-test-bootstrap.git
+  syncPolicy:
+    automated:
+      selfHeal: true

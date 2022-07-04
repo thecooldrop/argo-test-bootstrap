@@ -10,3 +10,6 @@ spec:
   source:
     path: kustomizations/argocd/envs/root
     repoURL: https://github.com/thecooldrop/argo-test-bootstrap.git
+  syncPolicy:
+    automated:
+      selfHeal: true
