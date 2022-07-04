@@ -8,5 +8,5 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: kustomizations/argocd
+    path: kustomizations/argocd/envs/root
     repoURL: https://github.com/thecooldrop/argo-test-bootstrap.git
