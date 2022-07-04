@@ -1,0 +1,5 @@
+resources:
+  - https://raw.githubusercontent.com/argoproj/argo-workflows/master/manifests/install.yaml
+namespace: argocd
+transformers:
+  - argocd-labels.yaml

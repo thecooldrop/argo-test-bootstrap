@@ -1,7 +1,8 @@
 kind delete cluster && \
 kind create cluster && \
-kubectl apply -k kustomizations/argocd/envs/root
-kubectl wait --for condition=established --timeout=60s crd/applications.argoproj.io -n argocd
+kubectl apply -k kustomizations/cluster-resources && \
+kubectl apply -k kustomizations/argocd/envs/root && \
+kubectl wait --for condition=established --timeout=60s crd/applications.argoproj.io -n argocd && \
 kubectl apply -k bootstrap
 while true; do
   kubectl get secret argocd-initial-admin-secret -n argocd;
